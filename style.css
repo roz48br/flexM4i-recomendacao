@@ -330,3 +330,42 @@ footer {
 .result-acoes hr ~ .recomendacao-titulo {
   margin-top: 4px;
 }
+
+.breadcrumb {
+  margin-bottom: 20px;
+  padding: 10px 14px;
+  background: #f7f5ff;
+  border-left: 3px solid #524fbf;
+  border-radius: 6px;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  line-height: 1.5;
+  color: #666;
+  font-size: 0.88rem;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  margin-top: 4px;
+}
+
+.breadcrumb-item::before {
+  content: "›";
+  color: #524fbf;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.breadcrumb-item:first-child::before {
+  display: none;
+}
+
+.breadcrumb-item .bc-exemplo {
+  font-style: italic;
+  color: #999;
+  font-size: 0.82rem;
+}

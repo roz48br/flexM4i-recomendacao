@@ -18,6 +18,53 @@ function show(id) {
   document.getElementById(id).classList.remove("hidden");
 }
 
+// Renderiza o breadcrumb do caminho percorrido até o nó atual
+// currentQid: nó sendo exibido agora (último do history)
+// showExemplo: se true, mostra o exemplo no último item
+function renderBreadcrumb(elId, currentQid, showExemplo) {
+  const el = document.getElementById(elId);
+  if (!el) return;
+
+  // Montar lista de nós do caminho: history já contém o caminho até o atual
+  // Para a tela de pergunta, o currentQid é o último do history
+  // Para a tela de resultado, pode ser um nó equivalente — usamos currentQid (original)
+  const crumbs = [];
+
+  // Percorrer history para obter os nós anteriores (excluindo ROOT e o atual)
+  for (let i = 0; i < history.length - 1; i++) {
+    const nid = history[i];
+    const n = nodes[nid];
+    if (!n || !n.pergunta) continue;
+    crumbs.push({ pergunta: n.pergunta, exemplo: null });
+  }
+
+  // Adicionar o nó atual com exemplo opcional
+  const currentNode = nodes[currentQid];
+  if (currentNode && currentNode.pergunta) {
+    crumbs.push({
+      pergunta: currentNode.pergunta,
+      exemplo: showExemplo ? (currentNode.exemplo || null) : null
+    });
+  }
+
+  // Remover o último item — já aparece como título da página
+  crumbs.pop();
+
+  if (crumbs.length === 0) {
+    el.classList.add("hidden");
+    return;
+  }
+
+  el.innerHTML = crumbs.map((c) => {
+    const exemploHtml = c.exemplo
+      ? ` <span class="bc-exemplo">${c.exemplo}</span>`
+      : "";
+    return `<div class="breadcrumb-item">${c.pergunta}${exemploHtml}</div>`;
+  }).join("");
+
+  el.classList.remove("hidden");
+}
+
 async function loadContent() {
   if (contentLoaded) return;
 
@@ -205,6 +252,7 @@ function renderQuestion(qid) {
   });
 
   document.getElementById("btnBackQuestion").classList.toggle("hidden", history.length <= 1);
+  renderBreadcrumb("breadcrumbQuestion", qid, false);
   show("screen-question");
 }
 
@@ -279,6 +327,7 @@ function showResult(node, nodeId) {
 
   btnDownload.classList.toggle("hidden", !!redirectTarget);
 
+  renderBreadcrumb("breadcrumbResult", nodeId, true);
   show("screen-result");
 }
 
