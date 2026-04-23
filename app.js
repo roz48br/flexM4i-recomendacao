@@ -10,6 +10,7 @@ let currentResult = null;
 let currentResultNodeId = null;
 let redirectTarget = null;
 let contentLoaded = false;
+let _skipPush = false;
 
 function show(id) {
   ["screen-welcome", "screen-question", "screen-result"].forEach((screenId) => {
@@ -17,6 +18,18 @@ function show(id) {
   });
   document.getElementById(id).classList.remove("hidden");
 }
+
+// Intercepta o botão voltar do browser sem sair do app
+window.addEventListener("popstate", function(e) {
+  if (e.state && e.state.sentinel) {
+    // Chegou na sentinela — reempurra para ela nunca sumir, e volta no app
+    window.history.pushState({ sentinel: true }, "");
+    goBack();
+  } else if (e.state && e.state.appNav) {
+    // Voltou de uma entrada normal — apenas navega no app sem novo pushState
+    goBack();
+  }
+});
 
 // Renderiza o breadcrumb do caminho percorrido até o nó atual
 // currentQid: nó sendo exibido agora (último do history)
@@ -158,6 +171,8 @@ async function start() {
   currentResult = null;
   redirectTarget = null;
 
+  // Sentinela no fundo do histórico — impede sair do app com botão voltar
+  window.history.replaceState({ sentinel: true }, "");
   renderNode(startId);
 }
 
@@ -253,6 +268,7 @@ function renderQuestion(qid) {
 
   document.getElementById("btnBackQuestion").classList.toggle("hidden", history.length <= 1);
   renderBreadcrumb("breadcrumbQuestion", qid, false);
+  if (!_skipPush) window.history.pushState({ appNav: true }, "");
   show("screen-question");
 }
 
@@ -328,6 +344,7 @@ function showResult(node, nodeId) {
   btnDownload.classList.toggle("hidden", !!redirectTarget);
 
   renderBreadcrumb("breadcrumbResult", nodeId, true);
+  if (!_skipPush) window.history.pushState({ appNav: true }, "");
   show("screen-result");
 }
 
@@ -345,19 +362,45 @@ function goBack() {
     return;
   }
 
-  // Subir o histórico até encontrar um nó com perguntas (tela de questão)
-  while (history.length > 0) {
-    const prevQid = history[history.length - 1];
-    history.pop();
-    const prevNode = nodes[prevQid];
-    if (prevNode && Array.isArray(prevNode.respostas) && prevNode.respostas.length > 0) {
-      renderNode(prevQid);
-      return;
-    }
+  // Remove o nó atual
+  history.pop();
+
+  if (history.length === 0) {
+    show("screen-welcome");
+    return;
   }
 
-  // Se não encontrou nenhum nó com perguntas, volta para o início
-  show("screen-welcome");
+  // Volta para o nó anterior sem adicionar nova entrada no browser history
+  const prevQid = history[history.length - 1];
+  history.pop();
+  _renderNodeSilent(prevQid);
+}
+
+// Renderiza sem pushState — usado pelo goBack
+function _renderNodeSilent(nodeId) {
+  const node = nodes[nodeId];
+  if (!node) return;
+  if (Array.isArray(node.respostas) && node.respostas.length > 0) {
+    _renderQuestionSilent(nodeId);
+  } else if (node.equivalente) {
+    const eq = nodes[node.equivalente];
+    if (eq) _showResultSilent(eq, nodeId);
+  } else {
+    _showResultSilent(node, nodeId);
+  }
+}
+
+function _renderQuestionSilent(qid) {
+  // Reusa renderQuestion mas suprime o pushState
+  _skipPush = true;
+  renderQuestion(qid);
+  _skipPush = false;
+}
+
+function _showResultSilent(node, nodeId) {
+  _skipPush = true;
+  showResult(node, nodeId);
+  _skipPush = false;
 }
 
 function goBackFromQuestion() {
@@ -388,6 +431,7 @@ function restart() {
   currentResult = null;
   currentResultNodeId = null;
   redirectTarget = null;
+  window.history.replaceState({ sentinel: true }, "");
   show("screen-welcome");
 }
 
