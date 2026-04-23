@@ -1,0 +1,268 @@
+{
+  "inicio": "ROOT",
+  "nodes": {
+    "ROOT": {
+      "pergunta": "O que você está tentando resolver, melhorar, estruturar ou decidir na gestão da inovação da sua organização?",
+      "respostas": [
+        {
+          "texto": "Quero localizar melhor onde está a principal dificuldade.",
+          "proximo": "P1"
+        },
+        {
+          "texto": "Quero estruturar ou melhorar a forma como a organização conduz a inovação.",
+          "proximo": "P2"
+        },
+        {
+          "texto": "Quero fazer avançar uma iniciativa específica.",
+          "proximo": "P3"
+        },
+        {
+          "texto": "Quero escolher uma abordagem, método ou ferramenta.",
+          "proximo": "P4"
+        },
+        {
+          "texto": "Quero entender melhor um tema ou conceito.",
+          "proximo": "P5"
+        },
+        {
+          "texto": "Ainda não sei bem por onde começar e preciso de um direcionamento inicial.",
+          "proximo": "P6"
+        }
+      ]
+    },
+    "P1": {
+      "pergunta": "Quero localizar melhor onde está a principal dificuldade.",
+      "exemplo": "Ex.: a inovação não avança como deveria, mas ainda não está claro se o problema está no foco, na priorização, no desenvolvimento, na implementação, na governança ou na cultura.",
+      "respostas": [
+        {
+          "texto": "Temos dificuldade para dar direção e foco à inovação.",
+          "proximo": "P1.1"
+        },
+        {
+          "texto": "Temos dificuldade para triagem, priorização e entrada de ideias no pipeline.",
+          "proximo": "P1.2"
+        },
+        {
+          "texto": "Temos dificuldade para fazer as iniciativas avançarem no desenvolvimento.",
+          "proximo": "P1.3"
+        },
+        {
+          "texto": "Temos dificuldade para implementar, lançar ou capturar resultado.",
+          "proximo": "P1.4"
+        },
+        {
+          "texto": "Temos dificuldade de governança, papéis e tomada de decisão.",
+          "proximo": "P1.5"
+        },
+        {
+          "texto": "Temos dificuldade mais ligada a cultura, comportamento ou colaboração.",
+          "proximo": "P1.6"
+        }
+      ]
+    },
+    "P1.1": {
+      "pergunta": "Temos dificuldade para dar direção e foco à inovação.",
+      "exemplo": "Ex.: prioridades pouco claras; iniciativas dispersas; baixa conexão com a estratégia.",
+      "subtitulo": "O que mais contribui para essa falta de direção e foco hoje?",
+      "respostas": [
+        {
+          "texto": "A estratégia do negócio não está sendo traduzida de forma consistente em direcionamento para a inovação.",
+          "proximo": "P1.1.1"
+        },
+        {
+          "texto": "Não temos uma definição suficientemente precisa de onde queremos inovar.",
+          "proximo": "P1.1.2"
+        },
+        {
+          "texto": "Há muitas ideias, inputs e possibilidades, mas a organização não consegue filtrar e dar vazão com agilidade e baixo custo.",
+          "proximo": "P1.1.3"
+        },
+        {
+          "texto": "A liderança não sustenta um direcionamento consistente ao longo do tempo.",
+          "proximo": "P1.1.4"
+        },
+        {
+          "texto": "Faltam objetivos e critérios para orientar as escolhas.",
+          "proximo": "P1.1.5"
+        },
+        {
+          "texto": "O problema parece estar mais na comunicação e no alinhamento do que na definição da direção em si.",
+          "proximo": "P1.1.6"
+        },
+        {
+          "texto": "Ainda não sei dizer exatamente o que está por trás dessa falta de direção e foco.",
+          "proximo": "P1.1.7"
+        }
+      ]
+    },
+    "P1.1.1": {
+      "pergunta": "A estratégia do negócio não está sendo traduzida de forma consistente em direcionamento para a inovação.",
+      "exemplo": "Ex.: a empresa tem objetivos estratégicos, mas eles não orientam com clareza onde inovar, o que priorizar, como decidir ou como sustentar o foco ao longo do tempo.",
+      "hipoteses": "<p>A dificuldade está na tradução da estratégia do negócio em direcionamentos que orientem decisões e ações de inovação ao longo do tempo.</p><p>Esse padrão pode indicar uma ou mais das seguintes situações:</p><ul><li>A estratégia é ampla ou genérica demais para orientar escolhas concretas sobre onde inovar e o que priorizar</li><li>As prioridades de inovação não estão explicitadas, ou não são consistentes ao longo do tempo</li><li>A estratégia não foi convertida em critérios de decisão aplicáveis no dia a dia</li><li>A liderança não sustenta o direcionamento de forma consistente, gerando sinais contraditórios para a organização</li><li>As áreas não compreendem ou não conseguem traduzir a estratégia em decisões operacionais</li></ul><p>Quando esse padrão ocorre, é comum observar:</p><ul><li>Perda de foco e dispersão de esforços</li><li>Baixa coerência entre iniciativas</li><li>Dificuldade de priorização e tomada de decisão</li><li>Redução da capacidade de execução, mesmo com intenção estratégica definida</li></ul>",
+      "recomendacoesRef": [
+        "R001"
+      ]
+    },
+    "P1.1.2": {
+      "pergunta": "Não temos uma definição suficientemente precisa de onde queremos inovar.",
+      "exemplo": "Ex.: temas, oportunidades, mercados, problemas, tecnologias ou tipos de inovação estão pouco definidos.",
+      "hipoteses": "<p>A dificuldade está na falta de delimitação do espaço de busca da inovação de forma aplicável na prática.</p><p>Esse padrão pode indicar uma ou mais das seguintes situações:</p><ul><li>A organização evita restringir o foco por receio de perder oportunidades, mantendo um escopo excessivamente aberto</li><li>As diretrizes estratégicas existem, mas não foram traduzidas em recortes concretos (temas, problemas, mercados ou tecnologias)</li><li>Há confusão entre explorar possibilidades amplas e definir prioridades para execução</li><li>O processo de definição de foco não está estruturado, ficando dependente de iniciativas isoladas ou interesses momentâneos</li><li>A organização reage mais a demandas externas e pressões internas do que a um direcionamento previamente definido</li></ul><p>Quando esse padrão ocorre, é comum observar:</p><ul><li>Dispersão de iniciativas e baixa concentração de esforços</li><li>Pipeline com temas pouco relacionados entre si</li><li>Dificuldade de priorização entre oportunidades</li><li>Reatividade a demandas pontuais, com baixa consistência ao longo do tempo</li><li>Baixa conversão de ideias em iniciativas com continuidade</li></ul>",
+      "recomendacoesRef": [
+        "R002"
+      ]
+    },
+    "P1.1.3": {
+      "pergunta": "Há muitas ideias, inputs e possibilidades, mas a organização não consegue filtrar e dar vazão com agilidade e baixo custo.",
+      "exemplo": "Ex.: volume elevado de sugestões; backlog crescente de ideias; demora para dar resposta; sensação de dispersão mesmo sem muitas iniciativas formalizadas.",
+      "hipoteses": "<p>Esse problema pode estar associado tanto à ausência de mecanismos de triagem quanto à falta de direcionamento estratégico para a inovação:</p><ul><li>Em alguns casos, o volume e a dispersão de ideias indicam limitações operacionais.</li><li>Em outros, indicam que a organização não definiu com clareza onde concentrar seus esforços de inovação.</li></ul><p>O volume de ideias e inputs não é, em si, um problema — ele é esperado em organizações que exploram múltiplas fontes de inovação (clientes, mercado, operação, P&D, colaboradores, tendências etc.).</p><p>A dificuldade está na capacidade da organização de lidar com o volume de ideias e inputs de forma estruturada, rápida e com baixo custo.</p><p>Esse padrão pode indicar uma ou mais das seguintes situações:</p><ul><li>A organização não estruturou mecanismos de triagem inicial capazes de lidar com grande volume de ideias</li><li>Há ausência de critérios simples e eliminatórios para reduzir rapidamente o volume</li><li>O processo de gestão de ideias tende a tratar todas as entradas com o mesmo nível de análise</li><li>A triagem depende excessivamente de esforço manual, o que limita escala e velocidade</li><li>Não há regras claras para encaminhamento (avançar, descartar ou manter em espera)</li></ul><p>Quando esse padrão ocorre, é comum observar:</p><ul><li>Acúmulo de backlog de ideias</li><li>Perda de velocidade na resposta e no avanço das iniciativas</li><li>Sensação de desorganização ou dispersão, mesmo com poucas iniciativas estruturadas</li><li>Desmotivação de quem contribui com ideias</li><li>Baixa conversão de ideias em iniciativas com continuidade</li></ul><p><strong>Observação:</strong> Este problema ocorre em um estágio inicial, relacionado ao tratamento de alto volume de ideias e inputs. Se a dificuldade principal estiver na comparação entre alternativas mais estruturadas e na tomada de decisão, explorar o ramo P1.1.5.</p>",
+      "recomendacoesRef": [
+        "R003"
+      ]
+    },
+    "P1.1.4": {
+      "pergunta": "A liderança não sustenta um direcionamento consistente ao longo do tempo.",
+      "exemplo": "Ex.: prioridades mudam com frequência; sinais contraditórios; inovação perde espaço diante da operação.",
+      "hipoteses": "<p>A dificuldade está na sustentação do direcionamento da inovação ao longo do tempo pela liderança.</p><p>Esse padrão pode indicar uma ou mais das seguintes situações:</p><ul><li>A liderança não está alinhada de forma consistente quanto às prioridades de inovação</li><li>O direcionamento existe, mas não está ancorado em mecanismos formais de governança que garantam continuidade</li><li>A inovação não possui um mandato claro dentro da organização, com autoridade suficiente para sustentar decisões ao longo do tempo</li><li>Não há responsáveis definidos pela orquestração da inovação, o que dilui a responsabilidade e enfraquece a continuidade</li><li>A inovação compete com demandas operacionais sem critérios claros de priorização, perdendo espaço ao longo do tempo</li><li>Há incentivos e métricas desalinhados, que favorecem resultados de curto prazo em detrimento da inovação</li><li>Mudanças frequentes de foco refletem reatividade a pressões externas ou internas, em vez de um direcionamento estruturado</li></ul><p>Quando esse padrão ocorre, é comum observar:</p><ul><li>Mudanças frequentes de prioridade</li><li>Sinais contraditórios para as áreas</li><li>Perda de confiança e engajamento nas iniciativas de inovação</li><li>Interrupção ou descontinuidade de projetos</li><li>Redução progressiva do espaço da inovação frente à operação</li><li>Em momentos de pressão ou crise, iniciativas e projetos de inovação voltados ao futuro são frequentemente adiados, congelados ou cancelados</li></ul><p>Este problema está relacionado à sustentação do direcionamento ao longo do tempo. Pode ocorrer em conjunto com problemas de definição de foco (ramo P1.1.2) ou de critérios de decisão (ramo P1.1.5), mas se diferencia por estar centrado na consistência da atuação da liderança.</p>",
+      "recomendacoesRef": [
+        "R004"
+      ]
+    },
+    "P1.1.5": {
+      "pergunta": "Faltam objetivos e critérios para orientar as escolhas.",
+      "exemplo": "Ex.: não está bem definido o que deve ser buscado, valorizado ou priorizado na seleção de iniciativas, nem quais critérios usar para comparar alternativas.",
+      "hipoteses": "<p>A organização pode até conseguir gerar e filtrar ideias iniciais, mas enfrenta dificuldade em transformar essas alternativas em decisões consistentes de investimento.</p><p>A dificuldade está na ausência ou fragilidade de objetivos e critérios que orientem de forma consistente as escolhas em inovação.</p><p>Esse padrão pode indicar uma ou mais das seguintes situações:</p><ul><li>Os objetivos da inovação não estão explicitados ou não são compreendidos de forma consistente</li><li>Os objetivos existem, mas não foram desdobrados em critérios de decisão aplicáveis</li><li>Há confusão entre geração/triagem de ideias e decisão de investimento, sem diferenciação de níveis de análise</li><li>As decisões dependem excessivamente de julgamentos individuais, pela falta de critérios compartilhados</li><li>Os critérios utilizados não refletem as prioridades estratégicas da organização</li></ul><p>Quando esse padrão ocorre, é comum observar:</p><ul><li>Decisões inconsistentes entre iniciativas semelhantes</li><li>Lentidão ou bloqueio na priorização</li><li>Dificuldade de comparar alternativas de forma estruturada</li><li>Predominância de decisões baseadas em opinião ou urgência</li><li>Tendência a concentrar esforços em iniciativas de curto prazo, sem equilíbrio com o médio e longo prazo</li></ul><p><strong>Observação:</strong> Este problema tende a se manifestar em um estágio posterior ao tratamento inicial das ideias, quando a organização já precisa comparar alternativas e tomar decisões de investimento. Pode ocorrer em conjunto com o problema de triagem inicial (ramo P1.1.3), ou de forma isolada.</p>",
+      "recomendacoesRef": [
+        "R005"
+      ]
+    },
+    "P1.1.6": {
+      "pergunta": "O problema parece estar mais na comunicação e no alinhamento do que na definição da direção em si.",
+      "exemplo": "Ex.: até existem prioridades, mas as áreas entendem de formas diferentes ou não se mobilizam.",
+      "hipoteses": "<p>A dificuldade está na forma como o direcionamento da inovação é compreendido, traduzido e aplicado pelas diferentes áreas e lideranças da organização.</p><p>Esse padrão pode indicar uma ou mais das seguintes situações:</p><ul><li>As prioridades de inovação não estão sendo comunicadas de forma clara e consistente entre áreas e níveis hierárquicos</li><li>O direcionamento não foi traduzido em referências práticas que orientem decisões no dia a dia</li><li>Cada área interpreta as prioridades de forma própria, gerando leituras divergentes</li><li>A liderança transmite mensagens inconsistentes ou não reforça o direcionamento de forma contínua</li><li>As prioridades não estão conectadas a metas, iniciativas ou mecanismos de acompanhamento</li><li>Há baixa colaboração transversal, dificultando alinhamento e execução coordenada</li><li>O nível de engajamento é baixo, reduzindo a mobilização em torno das prioridades</li></ul><p>Quando esse padrão ocorre, é comum observar:</p><ul><li>Interpretações diferentes sobre o que é prioritário</li><li>Iniciativas desalinhadas entre áreas</li><li>Dificuldade de coordenação e execução conjunta</li><li>Baixa mobilização das equipes</li><li>Descontinuidade ou perda de foco na execução</li></ul><p>Este problema está relacionado ao desdobramento organizacional do direcionamento. Pode ocorrer mesmo quando a estratégia e as prioridades estão bem definidas, diferenciando-se de problemas de definição de foco (ramo P1.1.2) ou de sustentação pela liderança (ramo P1.1.4).</p>",
+      "recomendacoesRef": [
+        "R006"
+      ]
+    },
+    "P1.1.7": {
+      "pergunta": "Ainda não sei dizer exatamente o que está por trás dessa falta de direção e foco.",
+      "exemplo": "Ex.: percebemos a dificuldade, mas ainda não conseguimos localizar sua origem principal.",
+      "hipoteses": "<p>A dificuldade está na ausência de clareza sobre qual fator está predominando na falta de direção e foco da inovação.</p><p>Esse padrão pode indicar uma ou mais das seguintes situações:</p><ul><li>Múltiplos fatores estão atuando simultaneamente (estratégia, foco, critérios, liderança, alinhamento), dificultando a identificação da causa principal</li><li>Os sintomas se sobrepõem, tornando difícil distinguir o que é causa e o que é consequência</li><li>A organização ainda não estruturou um diagnóstico que permita separar e comparar diferentes explicações</li><li>Há percepções divergentes entre áreas e lideranças sobre a origem do problema</li></ul><p>Quando esse padrão ocorre, é comum observar:</p><ul><li>Dificuldade em priorizar onde atuar</li><li>Tentativas de solução dispersas ou pouco coordenadas</li><li>Alternância entre diferentes explicações para o problema</li><li>Sensação de que \"tudo está um pouco errado\", sem clareza do fator predominante</li></ul><p>Este caso se diferencia dos anteriores dentro do problema \"P1.1 Temos dificuldade para dar direção e foco à inovação\" por ainda não haver clareza suficiente para identificar qual tipo de problema é mais relevante. Pode envolver elementos de vários dos problemas anteriores (P1.1.1 a P1.1.6).</p>",
+      "recomendacoesRef": [
+        "R007"
+      ]
+    },
+    "P1.2": {
+      "pergunta": "Temos dificuldade para triagem, priorização e entrada de ideias no pipeline.",
+      "exemplo": "Ex.: muitas ideias, poucos projetos; falta de critérios; decisões travadas.",
+      "subtitulo": "O que mais contribui para essa dificuldade hoje?",
+      "respostas": [
+        {
+          "texto": "Há muitas ideias, inputs e possibilidades, mas a organização não consegue filtrar e dar vazão com agilidade e baixo custo.",
+          "proximo": "P1.2.1"
+        },
+        {
+          "texto": "Temos dificuldade para transformar ideias, oportunidades ou desafios em iniciativas estruturadas para avançar no pipeline.",
+          "proximo": "P1.2.2"
+        },
+        {
+          "texto": "Faltam objetivos e critérios para orientar as escolhas.",
+          "proximo": "P1.2.3"
+        }
+      ]
+    },
+    "P1.3": {
+      "pergunta": "Temos dificuldade para fazer as iniciativas avançarem no desenvolvimento.",
+      "exemplo": "Ex.: retrabalho; desalinhamento entre áreas; projetos lentos ou que travam.",
+      "hipoteses": "Este ramo ainda está em desenvolvimento."
+    },
+    "P1.4": {
+      "pergunta": "Temos dificuldade para implementar, lançar ou capturar resultado.",
+      "exemplo": "Ex.: a solução até avança, mas não gera adoção, escala ou retorno.",
+      "hipoteses": "Este ramo ainda está em desenvolvimento."
+    },
+    "P1.5": {
+      "pergunta": "Temos dificuldade de governança, papéis e tomada de decisão.",
+      "exemplo": "Ex.: responsabilidades pouco claras; decisões lentas; ninguém se sente dono.",
+      "hipoteses": "Este ramo ainda está em desenvolvimento."
+    },
+    "P1.6": {
+      "pergunta": "Temos dificuldade mais ligada a cultura, comportamento ou colaboração.",
+      "exemplo": "Ex.: medo de experimentar; silos; baixa colaboração; pouca prioridade real.",
+      "hipoteses": "Este ramo ainda está em desenvolvimento."
+    },
+    "P2": {
+      "pergunta": "Quero estruturar ou melhorar a forma como a organização conduz a inovação.",
+      "exemplo": "Ex.: papéis, governança, processo, critérios, portfólio, indicadores.",
+      "hipoteses": "Este ramo ainda está em desenvolvimento."
+    },
+    "P3": {
+      "pergunta": "Quero fazer avançar uma iniciativa específica.",
+      "exemplo": "Ex.: novo produto, serviço, PSS, projeto com startup, uso de IA, transformação.",
+      "hipoteses": "Este ramo ainda está em desenvolvimento."
+    },
+    "P4": {
+      "pergunta": "Quero escolher uma abordagem, método ou ferramenta.",
+      "exemplo": "Ex.: entender problema, priorizar, gerar ideias, desenhar proposta de valor, avaliar viabilidade.",
+      "hipoteses": "Este ramo ainda está em desenvolvimento."
+    },
+    "P5": {
+      "pergunta": "Quero entender melhor um tema ou conceito.",
+      "exemplo": "Ex.: governança da inovação, servitização, PSS, JTBD, SWOT, pipeline, tese da inovação.",
+      "hipoteses": "Este ramo ainda está em desenvolvimento."
+    },
+    "P6": {
+      "pergunta": "Ainda não sei bem por onde começar e preciso de um direcionamento inicial.",
+      "hipoteses": "Este ramo ainda está em desenvolvimento."
+    },
+    "R001": {
+      "titulo": "R001. Traduzir estratégia em direcionamento para a inovação",
+      "acoes": "<ul><li>Traduzir a estratégia do negócio em um direcionamento mais específico para a inovação, definindo onde concentrar esforços e que tipo de valor se busca gerar.</li><li>Explicitar prioridades de inovação, deixando claro em que temas, problemas, mercados, tecnologias ou tipos de inovação a organização deseja focar.</li><li>Desdobrar essas prioridades em critérios claros de avaliação e decisão, capazes de orientar a seleção e priorização de iniciativas.</li><li>Diferenciar critérios de triagem inicial daqueles utilizados na decisão de investimento, evitando sobrecarga analítica nas fases iniciais e superficialidade nas decisões mais críticas.</li><li>Incorporar os horizontes de inovação (H1, H2 e H3) nos critérios ou nas regras de decisão, garantindo equilíbrio entre curto, médio e longo prazo.</li><li>Estruturar mecanismos de priorização e gestão de portfólio que permitam comparar alternativas e concentrar recursos de forma coerente.</li><li>Fortalecer a governança da inovação, explicitando papéis da liderança, ritos de decisão e mecanismos de acompanhamento.</li><li>Estabelecer maior consistência na atuação da liderança, reduzindo mudanças frequentes de direção e sinais contraditórios.</li><li>Traduzir o direcionamento em linguagem acionável, garantindo que áreas e lideranças consigam interpretar e aplicar as prioridades de forma convergente.</li><li>Criar mecanismos simples de alinhamento e acompanhamento, assegurando que o direcionamento se mantenha ao longo do tempo e se converta em execução.</li></ul><p><strong>Por onde começar:</strong></p><ul><li>Selecionar um conjunto reduzido de prioridades de inovação (ex.: 3 a 5 temas)</li><li>Definir poucos critérios de priorização e testá-los em iniciativas atuais</li><li>Revisar decisões recentes para identificar padrões implícitos</li><li>Alinhar a liderança antes de soluções e processos mais sofisticados</li></ul><p>Considere consultar as seguintes seções da flexM4i:</p><ul><li><a href=\"https://flexmethod4innovation.com/pratica/tese-de-inovacao/\">Tese da inovação</a></li><li><a href=\"https://flexmethod4innovation.com/teoria/estrategias/estrategia-objetivos-da-inovacao/\">Objetivos da inovação</a></li><li><a href=\"https://flexmethod4innovation.com/pratica/matriz-x/\">Matriz X</a></li><li><a href=\"https://flexmethod4innovation.com/pratica/gestao-de-portfolio/\">Gestão de portfólio</a></li><li><a href=\"https://flexmethod4innovation.com/pratica/3horizontes/\">Três horizontes de inovação</a></li><li><a href=\"https://flexmethod4innovation.com/pratica/governanca-da-inovacao-fundamentos/\">Governança da inovação</a> — cuidado para não tentar implementar a governança completa, pois sua implantação é uma consequência de um processo evolutivo.</li></ul>"
+    },
+    "R002": {
+      "titulo": "R002. Definir foco da inovação",
+      "acoes": "<ul><li>Definir recortes mais claros para a inovação, explicitando temas, problemas, mercados, tecnologias ou tipos de inovação prioritários.</li><li>Traduzir esses recortes em um direcionamento que oriente a geração e seleção de iniciativas.</li><li>Evitar escopos amplos demais que dificultam priorização e execução.</li><li>Conectar o direcionamento da inovação com objetivos estratégicos já existentes.</li><li>Garantir que o foco definido seja compreendido e aplicado de forma consistente pelas áreas.</li></ul><p><strong>Por onde começar:</strong></p><ul><li>Listar as principais frentes onde a organização já vem tentando inovar e identificar padrões ou dispersões.</li><li>Selecionar um conjunto reduzido de temas prioritários para concentrar esforços no curto prazo.</li><li>Revisar iniciativas recentes para entender se há coerência com algum direcionamento implícito.</li><li>Validar esse foco inicial com a liderança antes de expandir ou sofisticar o modelo.</li></ul><p>Aprofunde esse tema nas seguintes seções da flexM4i:</p><ul><li><a href=\"https://flexmethod4innovation.com/teoria/estrategias/estrategia-objetivos-da-inovacao/\">Objetivos da inovação</a></li><li><a href=\"https://flexmethod4innovation.com/pratica/tese-de-inovacao/\">Tese da inovação</a></li><li><a href=\"https://flexmethod4innovation.com/pratica/gestao-de-portfolio/\">Gestão de portfólio</a></li><li><a href=\"https://flexmethod4innovation.com/pratica/3horizontes/\">Três horizontes de inovação</a></li></ul><p>Considere montar um prompt para o <a href=\"https://chatgpt.com/g/g-cdRp2udsg-flexm4i\">chatGPT da flexM4i</a> a partir das seguintes perguntas:</p><ul><li>\"Como delimitar um espaço de busca de inovação sem perder oportunidades relevantes?\"</li><li>\"Como transformar diretrizes estratégicas em temas prioritários de inovação?\"</li></ul>"
+    },
+    "R003": {
+      "titulo": "R003. Filtrar ideias iniciais",
+      "acoes": "<ul><li>Estruturar um processo simples de gestão de ideias com foco em triagem inicial.</li><li>Definir critérios rápidos e eliminatórios (ex.: aderência mínima, relevância, aplicabilidade básica).</li><li>Utilizar ferramentas de apoio (incluindo IA) para classificar, agrupar e reduzir o volume de ideias.</li><li>Eliminar duplicações e consolidar ideias semelhantes.</li><li>Definir regras objetivas para o encaminhamento das ideias, estabelecendo o que deve avançar para análise, o que deve ser descartado imediatamente e o que pode ser mantido em espera para reavaliação futura.</li><li>Estabelecer tempos de resposta curtos para evitar acúmulo e desmotivação.</li></ul><p><strong>Por onde começar:</strong></p><ul><li>Organizar as entradas de inovação (ideias, sugestões, demandas) em um repositório único, evitando tratar cada input de forma isolada.</li><li>Aplicar mecanismos simples de classificação e agrupamento — inclusive com apoio de ferramentas e IA — para reduzir rapidamente o volume e consolidar ideias semelhantes.</li><li>Eliminar duplicações e separar ideias claramente inviáveis, utilizando critérios mínimos e eliminatórios, sem aprofundar análise neste momento.</li><li>A partir do conjunto mais enxuto, definir regras simples de encaminhamento, indicando o que deve avançar, ser descartado ou mantido em espera.</li></ul><p><strong>Observações:</strong></p><ul><li>Se, após essa etapa, a principal dificuldade passar a ser comparar alternativas e decidir onde investir, avançar para a definição de objetivos e critérios de priorização (ramo P1.1.5).</li><li>Se a dificuldade principal estiver na escolha entre alternativas mais maduras e na definição de prioridades de investimento, explorar o ramo P1.2 \"Temos dificuldade para transformar ideias em prioridades e projetos\".</li></ul><p>Considere consultar as seguintes seções da flexM4i:</p><ul><li><a href=\"https://flexmethod4innovation.com/pratica/fontes-para-a-inovacao/\">Fontes para a inovação</a> — para conhecer as diversas possibilidades de levantamento de ideias, desafios e oportunidades de inovação.</li><li><a href=\"https://flexmethod4innovation.com/pratica/sintese-entradas-inovacao/\">Oportunidades, desafios e ideias como síntese das entradas para inovação</a> — entenda porque a flexM4i sintetiza todas as possíveis variedades de inputs em oportunidades, desafios e ideias resultantes das fontes listadas anteriormente.</li></ul><p><strong>Lacuna da flexM4i:</strong> Consulte também em outras fontes informações sobre idea screening, idea management, <strong>gestão de ideias</strong>, assim como plataformas/aplicações para apoiar e acelerar este processo. Use esses termos para fazer uma busca de passos adicionais.</p>"
+    },
+    "R004": {
+      "titulo": "R004. Liderança de inovação perene",
+      "acoes": "<ul><li>Explicitar o papel da liderança na sustentação da inovação ao longo do tempo.</li><li>Estabelecer ritos e mecanismos de decisão que reduzam mudanças frequentes de direção.</li><li>Alinhar incentivos e métricas para evitar predominância exclusiva de resultados de curto prazo.</li><li>Criar mecanismos de acompanhamento que reforcem a continuidade das iniciativas.</li></ul><p><strong>Por onde começar:</strong></p><ul><li>Alinhar a liderança em torno de um conjunto reduzido de prioridades de inovação que não devem ser alteradas no curto prazo.</li><li>Revisar decisões recentes para identificar mudanças de direção e suas causas.</li><li>Definir um mecanismo simples de acompanhamento que permita dar visibilidade à continuidade ou interrupção das iniciativas.</li></ul><hr><p>Copie a seguinte pergunta e cole no prompt do <a href=\"https://chatgpt.com/g/g-cdRp2udsg-flexm4i\">GPT de IA da flexM4i</a>:</p><p><em>\"Na minha empresa, existem diretrizes e prioridades para a inovação, mas a alta gestão muda o foco com frequência, envia sinais contraditórios e a inovação perde espaço diante das demandas operacionais.</em></p><p><em>Quais hipóteses diagnósticas devo considerar relacionadas a governança da inovação, papéis da liderança, mecanismos de decisão e sustentação do direcionamento?</em></p><p><em>Estruture a resposta em três partes:</em></p><ol><li><em>Principais hipóteses explicativas para esse comportamento da liderança</em></li><li><em>Como validar ou investigar cada hipótese na prática</em></li><li><em>Ações prioritárias e sequenciadas para estabilizar o direcionamento e aumentar a consistência ao longo do tempo</em></li></ol><p><em>Sempre que possível, diferencie causas estruturais (governança, processos, papéis) de causas comportamentais (liderança, cultura, incentivos) e indique por onde começar com maior impacto.\"</em></p><hr><p>Sugestão: após a resposta, pergunte ao GPT: <em>\"O conteúdo da flexM4i é suficiente para eu enfrentar esse desafio ou há lacunas que exigem fontes complementares? Quais seriam essas lacunas?\"</em></p><p>Considere consultar as seguintes seções da flexM4i:</p><ul><li><a href=\"https://flexmethod4innovation.com/pratica/mandato-de-inovacao/\">Mandato de inovação</a></li><li><a href=\"https://flexmethod4innovation.com/pratica/governanca-da-inovacao-fundamentos/\">Governança da inovação</a> — cuidado para não tentar implementar a governança completa, pois sua implantação é uma consequência de um processo evolutivo.</li></ul>"
+    },
+    "R005": {
+      "titulo": "R005. Definir objetivos e critérios para orientar escolhas",
+      "acoes": "<ul><li>Explicitar os objetivos da inovação, deixando claro o que a organização busca alcançar.</li><li>Desdobrar esses objetivos em critérios claros de avaliação e priorização.</li><li>Diferenciar critérios de triagem inicial daqueles usados na decisão de investimento.</li><li>Estruturar mecanismos de comparação entre iniciativas, como scorecards ou matrizes.</li><li>Incorporar os horizontes de inovação nos critérios ou nas regras de decisão.</li><li>Garantir um equilíbrio mínimo entre iniciativas de curto, médio e longo prazo.</li><li>Alinhar a priorização com a estratégia, a capacidade organizacional e o portfólio existente.</li></ul><p><strong>Por onde começar:</strong></p><ul><li>Definir um conjunto reduzido de objetivos de inovação, priorizando clareza e aplicabilidade em vez de completude. Esses objetivos devem orientar decisões reais no curto prazo, mesmo que ainda não estejam totalmente refinados ou formalizados.</li><li>A partir desses objetivos, explicitar um número limitado de critérios de avaliação que permitam comparar alternativas de forma prática. Esses critérios devem ser simples o suficiente para uso imediato e diretamente relacionados ao que a organização busca alcançar.</li><li>Aplicar esses critérios em um conjunto pequeno de iniciativas reais — por exemplo, decisões recentes ou em andamento — para verificar se ajudam a esclarecer escolhas, reduzir divergências e dar mais consistência ao processo decisório.</li><li>Ajustar os critérios com base nas dificuldades observadas durante a aplicação, evitando formalizar modelos mais estruturados antes de validar sua utilidade na prática.</li><li>Ao definir os critérios, verificar se não há sobreposição entre eles e se não estão avaliando aspectos muito similares, o que pode distorcer a comparação entre alternativas ou gerar compensações indevidas.</li></ul><p>Considere consultar as seguintes seções da flexM4i:</p><ul><li><a href=\"https://flexmethod4innovation.com/teoria/estrategias/estrategia-objetivos-da-inovacao/\">Objetivos da inovação</a></li><li><a href=\"https://flexmethod4innovation.com/pratica/gestao-de-portfolio/\">Gestão de portfólio</a></li><li><a href=\"https://flexmethod4innovation.com/pratica/3horizontes/\">Três horizontes de inovação</a></li></ul>"
+    },
+    "R006": {
+      "titulo": "R006. Resolver problemas de comunicação e alinhamento",
+      "acoes": "<ul><li>Garantir que as prioridades de inovação sejam comunicadas de forma clara, consistente e recorrente.</li><li>Traduzir o direcionamento em referências práticas que orientem decisões no dia a dia.</li><li>Alinhar lideranças para reduzir interpretações divergentes.</li><li>Conectar prioridades a iniciativas, metas ou mecanismos simples de acompanhamento.</li><li>Estimular colaboração entre áreas para reforçar execução coordenada.</li></ul><p><strong>Por onde começar:</strong></p><ul><li>Revisar como as prioridades vêm sendo comunicadas e interpretadas por diferentes áreas.</li><li>Identificar onde existem divergências de entendimento ou falta de aplicação prática.</li><li>Testar formas simples de traduzir prioridades em orientações mais acionáveis para o dia a dia.</li></ul><hr><p>Copie a seguinte pergunta e cole no prompt do <a href=\"https://chatgpt.com/g/g-cdRp2udsg-flexm4i\">GPT de IA da flexM4i</a>:</p><p><em>\"Na minha organização, as prioridades para a inovação <strong>já existem e, em princípio, fazem sentido</strong>. O problema principal não parece estar na definição da direção estratégica, mas sim na <strong>capacidade de transformar essas prioridades em entendimento comum, mobilização e execução coordenada entre áreas e lideranças</strong>.</em></p><p><em>Em alguns casos:</em></p><ul><li><em>áreas interpretam prioridades de formas diferentes;</em></li><li><em>líderes comunicam mensagens inconsistentes;</em></li><li><em>prioridades não se convertem em metas ou iniciativas claras;</em></li><li><em>faltam referências práticas para decisões do dia a dia;</em></li><li><em>há baixa colaboração transversal;</em></li><li><em>as pessoas não se sentem engajadas ou mobilizadas.</em></li></ul><p><em>Neste momento, <strong>não quero priorizar revisão da estratégia</strong>, nem soluções pesadas de governança, estrutura ou burocratização de processos. Quero focar primeiro em <strong>comunicação, execução estratégica, liderança, clima organizacional e alinhamento estratégico e organizacional</strong>.</em></p><p><em>Pode me ajudar a:</em></p><ol><li><em>levantar hipóteses diagnósticas sobre por que prioridades existentes não estão sendo bem comunicadas, compreendidas e executadas;</em></li><li><em>diferenciar se a principal falha está em comunicação gerencial, liderança, clima organizacional, desdobramento estratégico, colaboração entre áreas ou ausência de mecanismos simples de acompanhamento;</em></li><li><em>sugerir perguntas internas para descobrir onde está o maior gargalo;</em></li><li><em>propor ações iniciais práticas e leves para melhorar alinhamento e execução, sem burocratizar;</em></li><li><em>considerar especialmente metodologias de execução estratégica como <strong>Matriz X (Hoshin Kanri)</strong> e <strong>OKRs</strong>, explicando quando cada uma pode ajudar;</em></li><li><em>relacionar o papel da liderança (diferença entre gestor e líder) na sustentação dessas prioridades;</em></li><li><em>indicar conteúdos da flexM4i que sejam mais aderentes a esse tipo de problema, priorizando liderança, clima, execução estratégica e alinhamento antes de governança formal.\"</em></li></ol><hr><p>Sugestão: após a resposta, pergunte ao GPT: <em>\"O conteúdo da flexM4i é suficiente para eu enfrentar esse desafio ou há lacunas que exigem fontes complementares? Quais seriam essas lacunas?\"</em></p>"
+    },
+    "R007": {
+      "titulo": "R007. Explorar possíveis causas da falta de direção e foco",
+      "acoes": "<ul><li>Organizar os principais sintomas observados, evitando interpretações iniciais ou tentativas de explicação.</li><li>Agrupar esses sintomas em categorias (por exemplo: estratégia, foco, priorização, liderança, alinhamento) para identificar padrões iniciais.</li><li>Verificar quais sintomas aparecem com maior frequência ou têm maior impacto na prática.</li><li>Evitar atuar simultaneamente em múltiplas frentes antes de identificar um fator predominante.</li></ul><hr><p>Elabore um prompt ao <a href=\"https://chatgpt.com/g/g-cdRp2udsg-flexm4i\">GPT da flexM4i</a>, descrevendo os sintomas e pedindo apoio para estruturar hipóteses diagnósticas. Segue um exemplo que você pode adaptar à sua realidade:</p><p><em>\"Na minha organização, percebemos que a inovação está com falta de direção e foco, mas ainda não conseguimos identificar com segurança qual é a principal causa. Observamos sintomas como prioridades difusas, iniciativas dispersas, dificuldade de concentração de esforços, dúvidas sobre onde inovar, sinais inconsistentes da liderança e diferenças de interpretação entre áreas.</em></p><p><em>Esses problemas parecem estar combinados, e temos dificuldade em separar o que é causa principal e o que é consequência.</em></p><p><em>Pode me ajudar a:</em></p><ol><li><em>estruturar hipóteses diagnósticas organizadas por tipo de mecanismo;</em></li><li><em>explicar como distinguir esses mecanismos na prática;</em></li><li><em>sugerir perguntas que eu deveria fazer internamente para identificar o fator predominante;</em></li><li><em>indicar por onde começar, considerando que mais de um fator pode estar atuando ao mesmo tempo?\"</em></li></ol><hr><p>Após analisar a resposta, retorne a esta árvore e verifique novamente as opções relacionadas ao problema \"Temos dificuldade para dar direção e foco à inovação\". Com maior entendimento do problema, você provavelmente conseguirá identificar qual delas melhor representa a sua situação.</p><p>Sugestão: após a resposta, pergunte ao GPT: <em>\"O conteúdo da flexM4i é suficiente para eu enfrentar esse desafio ou há lacunas que exigem fontes complementares? Quais seriam essas lacunas?\"</em></p>"
+    },
+    "P1.2.1": {
+      "pergunta": "Há muitas ideias, inputs e possibilidades, mas a organização não consegue filtrar e dar vazão com agilidade e baixo custo.",
+      "exemplo": "Ex.: volume elevado de sugestões; backlog crescente de ideias; demora para dar resposta; sensação de dispersão mesmo sem muitas iniciativas formalizadas.",
+      "equivalente": "P1.1.3"
+    },
+    "P1.2.2": {
+      "pergunta": "Temos dificuldade para transformar ideias, oportunidades ou desafios em iniciativas estruturadas para avançar no pipeline.",
+      "exemplo": "Ex.: ideias promissoras não evoluem; propostas permanecem vagas; não está claro o que precisa ser definido para avançar antes do início do desenvolvimento.",
+      "hipoteses": "<p>A dificuldade pode não estar mais no excesso de ideias nem, necessariamente, na ausência de critérios estratégicos de priorização, mas sim na ausência de uma etapa intermediária que transforme entradas promissoras em iniciativas minimamente estruturadas.</p><p>Esse padrão pode indicar uma ou mais das seguintes situações:</p><ul><li>a organização consegue captar e até filtrar ideias, mas não explicita o que uma entrada precisa conter para avançar;</li><li>faltam artefatos simples para transformar ideias em algo comparável e discutível;</li><li>há confusão entre ideia, oportunidade, desafio, iniciativa e projeto;</li><li>as áreas propõem entradas ainda vagas, dificultando o avanço;</li><li>não existem responsáveis ou ritos leves para amadurecer essas entradas;</li><li>a organização tenta decidir cedo demais, sem um nível mínimo de formulação;</li><li>ou, ao contrário, posterga indefinidamente a estruturação inicial das entradas.</li></ul><p>Quando esse padrão ocorre, é comum observar:</p><ul><li>ideias \"boas\" que não saem do lugar;</li><li>dificuldade de transformar discussões em propostas com próximo passo definido;</li><li>reuniões recorrentes sem decisões claras;</li><li>entradas heterogêneas demais para comparação;</li><li>sensação de travamento entre a triagem inicial e a priorização mais formal.</li></ul>",
+      "recomendacoesRef": [
+        "R008"
+      ]
+    },
+    "P1.2.3": {
+      "pergunta": "Faltam objetivos e critérios para orientar as escolhas.",
+      "exemplo": "Ex.: não está bem definido o que deve ser buscado, valorizado ou priorizado na seleção de iniciativas, nem quais critérios usar para comparar alternativas.",
+      "equivalente": "P1.1.5"
+    },
+    "R008": {
+      "titulo": "R008. Estruturar a passagem de entradas promissoras de inovação para iniciativas",
+      "acoes": "<ul><li>Definir uma etapa intermediária entre a triagem inicial e a priorização mais formal, com o objetivo de transformar ideias, oportunidades e desafios em iniciativas minimamente estruturadas.</li><li>Explicitar que tipo de entrada a organização aceita nessa etapa e quais informações mínimas devem ser registradas para permitir análise posterior.</li><li>Diferenciar com mais precisão os conceitos de: ideias (entradas iniciais), oportunidades e desafios (formulações mais direcionadas), iniciativas (propostas estruturadas) e projetos (iniciativas priorizadas para execução).</li><li>Criar um modelo simples de estruturação inicial da iniciativa, com poucos campos: problema ou oportunidade a enfrentar; público ou contexto afetado; valor esperado; alinhamento inicial com prioridades existentes; principais incertezas; próximo passo sugerido.</li><li>Definir quem pode apoiar o amadurecimento dessas entradas e em que momento isso deve ocorrer.</li><li>Estabelecer um rito leve para revisar esse conjunto e decidir se a entrada volta para amadurecimento, avança para priorização, é mantida em espera ou é encerrada.</li><li>Evitar tanto a análise superficial quanto a exigência prematura de business cases completos.</li></ul><p><strong>Por onde começar:</strong></p><ul><li>Selecionar algumas ideias ou oportunidades recentes que pareceram promissoras, mas não avançaram.</li><li>Comparar essas entradas para identificar o que estava faltando para permitir um próximo passo mais objetivo.</li><li>Definir um modelo mínimo e simples de estruturação inicial das iniciativas, evitando criar um processo pesado neste momento.</li><li>Testar esse modelo em poucos casos reais antes de formalizar regras mais amplas.</li></ul><p><strong>Observações:</strong></p><ul><li>Se a principal dificuldade estiver na comparação entre alternativas e na definição de objetivos e critérios de escolha, explorar o problema P1.2.1.</li><li>Se as iniciativas já foram estruturadas e iniciadas, mas enfrentam retrabalho, desalinhamento ou lentidão no avanço durante o desenvolvimento (no pipeline / funil), explorar o problema P1.3.</li></ul><p>Aprofunde este tema nas seguintes seções da flexM4i:</p><ul><li><a href=\"https://flexmethod4innovation.com/pratica/artefatos-iniciais-da-inovacao/\">Artefatos iniciais da inovação</a>: para nivelar o linguajar na empresa entre os vários inputs possíveis que desencadeiam uma inovação.</li><li><a href=\"https://flexmethod4innovation.com/pratica/sintese-entradas-inovacao/\">Oportunidades, desafios e ideias como síntese das entradas para inovação</a>: para compreender como diferentes tipos de entrada podem ser organizados e tratados de forma mais consistente.</li></ul><p>Complementarmente, dependendo do contexto:</p><ul><li><a href=\"https://flexmethod4innovation.com/pratica/processo-discovery/\">Processo de discovery</a>: o discovery pode ser considerado um processo inicial da inovação radical ou estratégica, que define oportunidades ou desafios de inovação e, em algumas definições, abrange a ideação, prototipagem e testes.</li><li><a href=\"https://flexmethod4innovation.com/pratica/front-end-of-innovation/\">Front-end of innovation</a>: é o que envolve as fases iniciais da inovação. Abrange várias abordagens, incluindo o Discovery.</li><li><a href=\"https://flexmethod4innovation.com/pratica/funil-de-inovacao/\">Funil de inovação ainda é válido?</a>: conhecer o conceito de funil é importante para não ter o preconceito com este termo, pois o conceito é mais amplo do que necessariamente ter um processo estruturado de inovação.</li><li><a href=\"https://flexmethod4innovation.com/pratica/experimentar-avaliar-selecionar-aprender-e-pivotar/\">Experimentar, avaliar, selecionar, aprender e pivotar</a>: para apoiar decisões em contextos de incerteza, especialmente quando ainda não há base suficiente para decisões mais definitivas.</li></ul>"
+    }
+  }
+}
