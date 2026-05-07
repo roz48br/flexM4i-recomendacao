@@ -14,7 +14,7 @@
 <main>
   <div class="card">
     <div id="screen-welcome">
-      <p class="welcome-title">Bem-vindo!</p>
+      <p class="welcome-title">Bem-vindos!</p>
       <p class="welcome-sub">Responda a algumas perguntas para entender melhor seus desafios de <strong>gestão da inovação</strong> e obter:</p>
       <ul class="welcome-list">
         <li>hipóteses diagnósticas sobre o seu contexto</li>
@@ -22,6 +22,7 @@
         <li>indicações de conteúdos relevantes da flexM4i</li>
         <li>formulações de <strong>prompts estruturados</strong> para você copiar e aprofundar a análise com os <strong>agentes de IA da flexM4i</strong></li>
       </ul>
+      <p class="welcome-disclaimer">Use as <strong>recomendações como ponto de partida. Antes de aplicá-las</strong>, adapte-as ao contexto, à maturidade, aos recursos e às prioridades reais da sua organização.</p>
       <button class="btn-primary" onclick="start()">Começar</button>
     </div>
 
@@ -31,7 +32,7 @@
       <p class="question-exemplo hidden" id="questionExemplo"></p>
       <p class="question-subtitulo hidden" id="questionSubtitulo"></p>
       <div class="options-list" id="optionsList"></div>
-      <button id="btnBackQuestion" class="btn-secondary hidden" style="margin-top:20px" onclick="goBackFromQuestion()">← Voltar para a questão anterior</button>
+      <button id="btnBackQuestion" class="btn-secondary hidden" style="margin-top:20px" onclick="goBackFromQuestion()">← Voltar</button>
     </div>
 
     <div id="screen-result" class="hidden">
@@ -43,16 +44,22 @@
 
       <div class="result-highlight">
         <h2>Hipóteses do desafio</h2>
+          <p class="hypothesis-note">
+            <em>Use estas hipóteses como um checklist. Nem todas se aplicam ao seu caso; considere aquelas que melhor explicam o desafio na sua organização.</em>
+          </p>
         <div id="resultHipoteses"></div>
       </div>
 
       <div id="resultRecomendacoesBox" class="result-acoes hidden">
         <h2>Recomendações</h2>
+          <p class="recommendation-note">
+            <em>Use estas recomendações como ponto de partida. Antes de aplicá-las, adapte-as ao contexto, à maturidade, aos recursos e às prioridades reais da sua organização.</em>
+          </p>
         <div id="resultRecomendacoes"></div>
       </div>
 
       <button id="btnContinuar" class="btn-primary hidden" style="margin-bottom:12px" onclick="continuar()">Continuar →</button>
-      <button class="btn-secondary" onclick="goBack()">← Voltar para a questão anterior</button>
+      <button class="btn-secondary" onclick="goBack()">← Voltar</button>
       <button id="btnDownload" class="btn-secondary hidden" onclick="downloadPDF()" style="margin-bottom:12px">⬇ Baixar o caminho percorrido</button>
       <button class="btn-primary" onclick="restart()">Recomeçar</button>
     </div>
@@ -60,6 +67,7 @@
 </main>
 <footer>flexM4i &mdash; Gestão da Inovação</footer>
 <script src="jspdf.umd.min.js"></script>
+<script src="content.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

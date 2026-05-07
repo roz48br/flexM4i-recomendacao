@@ -1,6 +1,7 @@
 const LOGO_B64 = "data:image/png;base64,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Dr+CQDfw2hpJHkzppWpYuAMDootercpS3V71xob3SCNYBmyKOOu46WOiI961fMidDqZyLOYz0G6NNeJ66+WS0FUmI1TJqZruprwA5XiekGvgCzB4aQ26G86czJww7DQXY7XSyzviuNf0OLG8OabneR36DdwRhEJhBgbVVfBCEflHbdrF97qo/nLUKru3Auf12RAy8qyJ066aQ1KtZVsra3uW9MrzofJtcYXwbUQumLrGJq6YrppDUgXbdi7bFkmc4PhjiL20CIwicnNeH9sLfpwSc2+LG0SDBJ0n4++xQndsG2STunHOPpLYuURuS6hhvfrdAKvPEkRuiGMR0xtgssTUZ6AplkTjJBoSGuopKm0MiYvKSMhxilwQjWDy6m+Em8s022I7fFymmR96x54/V6E2RZBN332AfVNbHNl4giaJectsv8/z0LBG+zZVy70NXsfol2m2gpVCrtBV/t+fl2lmeoEu5s9PmiB9vfsZ8d0lhLUfwAhiRH8Gccvr+bulK0pBFLmPIClePWXf3wC/at1BwLLEdWkR7x48v409tCT2hXNxSKmJMq8Zcx7gGCkGZqeJdALXxfYQ+oPxckGZwy4Qn1kjS11952cPBCPS1Vy9/N4vxvereyQxjaar5TYH3OskzAemuNgLIcS/V0lJ+eqZEH0AAAAASUVORK5CYII=";
 
-let CONTENT = null;
+// let CONTENT = null;
+// CONTENT deve ser definido no arquivo content.js, carregado antes deste app.js no index.html
 let nodes = {};
 let startId = "";
 
@@ -11,11 +12,22 @@ let currentResultNodeId = null;
 let redirectTarget = null;
 let contentLoaded = false;
 
+function formatCurrentTitle(text) {
+  const level = history.length - 1;
+
+  if (level <= 0) {
+    return text || "";
+  }
+
+  return `[${level}] ${text || ""}`;
+}
+
 function show(id) {
   ["screen-welcome", "screen-question", "screen-result"].forEach((screenId) => {
     document.getElementById(screenId).classList.add("hidden");
   });
   document.getElementById(id).classList.remove("hidden");
+  window.scrollTo({ top: 0, behavior: "instant" });
 }
 
 // Renderiza o breadcrumb do caminho percorrido até o nó atual
@@ -25,66 +37,103 @@ function renderBreadcrumb(elId, currentQid, showExemplo) {
   const el = document.getElementById(elId);
   if (!el) return;
 
-  // Montar lista de nós do caminho: history já contém o caminho até o atual
-  // Para a tela de pergunta, o currentQid é o último do history
-  // Para a tela de resultado, pode ser um nó equivalente — usamos currentQid (original)
   const crumbs = [];
 
-  // Percorrer history para obter os nós anteriores (excluindo ROOT e o atual)
+  // Monta apenas o caminho anterior ao nó atual.
+  // O nó atual continua aparecendo como título principal da tela.
   for (let i = 0; i < history.length - 1; i++) {
     const nid = history[i];
     const n = nodes[nid];
-    if (!n || !n.pergunta) continue;
-    crumbs.push({ pergunta: n.pergunta, exemplo: null });
-  }
 
-  // Adicionar o nó atual com exemplo opcional
-  const currentNode = nodes[currentQid];
-  if (currentNode && currentNode.pergunta) {
+    if (!n || !n.pergunta) continue;
+
     crumbs.push({
-      pergunta: currentNode.pergunta,
-      exemplo: showExemplo ? (currentNode.exemplo || null) : null
+      pergunta: n.pergunta,
+      historyIndex: i
     });
   }
-
-  // Remover o último item — já aparece como título da página
-  crumbs.pop();
 
   if (crumbs.length === 0) {
     el.classList.add("hidden");
     return;
   }
 
-  el.innerHTML = crumbs.map((c) => {
-    const exemploHtml = c.exemplo
-      ? ` <span class="bc-exemplo">${c.exemplo}</span>`
-      : "";
-    return `<div class="breadcrumb-item">${c.pergunta}${exemploHtml}</div>`;
-  }).join("");
+  function escapeHtml(value) {
+    return String(value || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+  el.innerHTML = `
+    <div class="breadcrumb-title">Caminho percorrido</div>
+    <div class="breadcrumb-list">
+      ${crumbs.map((c, index) => {
+        const label = index === 0 ? "Tela inicial:" : `[${index}]`;
+        const indent = index * 18;
+
+        return `
+          <div class="breadcrumb-item" style="margin-left:${indent}px">
+            <span class="breadcrumb-step">${label}</span>
+            <a href="javascript:void(0)"
+               onclick="goToBreadcrumbIndex(${c.historyIndex})"
+               class="breadcrumb-link">
+              ${escapeHtml(c.pergunta)}
+            </a>
+          </div>
+        `;
+      }).join("")}
+    </div>
+  `;
 
   el.classList.remove("hidden");
+}
+
+function goToBreadcrumbIndex(index) {
+  // Validação básica:
+  // Garante que o índice clicado está dentro dos limites do histórico
+  // Evita erros caso o usuário clique em algo inesperado
+  if (index < 0 || index >= history.length) return;
+
+  // Ajuste do histórico:
+  // Mantém apenas os nós até o ponto clicado no breadcrumb
+  // Exemplo:
+  // history atual: [P1, P1.3, P1.3.3, P1.3.5]
+  // clique em P1.3 → index = 1
+  // novo history: [P1, P1.3]
+  history = history.slice(0, index + 1);
+
+  // Recupera o nó correspondente ao ponto selecionado
+  const nodeId = history[index];
+
+  // Validação de segurança:
+  // Se por algum motivo o nó não existir (inconsistência de dados),
+  // retorna para a tela inicial para evitar quebra da aplicação
+  if (!nodeId || !nodes[nodeId]) {
+    show("screen-welcome");
+    return;
+  }
+
+  // Renderização:
+  // Recarrega a interface com base no nó selecionado
+  // Pode ser tanto uma pergunta quanto um resultado
+  // (o renderNode já trata isso internamente)
+  renderNode(nodeId);
 }
 
 async function loadContent() {
   if (contentLoaded) return;
 
-  let response;
-  try {
-    response = await fetch("content.json", { cache: "no-store" });
-  } catch (err) {
+  if (typeof CONTENT === "undefined" || !CONTENT) {
     throw new Error(
-      "Não foi possível carregar o content.json. Se você abriu o index.html diretamente no navegador, rode o site em um servidor local."
+      "CONTENT não carregado. Verifique se content.js foi incluído antes do app.js no index.html."
     );
   }
+ 
+  validateContent(CONTENT);
 
-  if (!response.ok) {
-    throw new Error(`Falha ao carregar content.json (${response.status})`);
-  }
-
-  const json = await response.json();
-  validateContent(json);
-
-  CONTENT = json;
   nodes = CONTENT.nodes;
   startId = CONTENT.inicio;
   contentLoaded = true;
@@ -92,19 +141,19 @@ async function loadContent() {
 
 function validateContent(content) {
   if (!content || typeof content !== "object") {
-    throw new Error("content.json inválido: o arquivo não contém um objeto JSON.");
+    throw new Error("content.js inválido: o arquivo não contém um objeto JSON.");
   }
 
   if (!content.nodes || typeof content.nodes !== "object") {
-    throw new Error("content.json inválido: 'nodes' não foi definido corretamente.");
+    throw new Error("content.js inválido: 'nodes' não foi definido corretamente.");
   }
 
   if (!content.inicio || typeof content.inicio !== "string") {
-    throw new Error("content.json inválido: 'inicio' não foi definido corretamente.");
+    throw new Error("content.js inválido: 'inicio' não foi definido corretamente.");
   }
 
   if (!content.nodes[content.inicio]) {
-    throw new Error(`content.json inválido: o nó inicial '${content.inicio}' não existe.`);
+    throw new Error(`content.js inválido: o nó inicial '${content.inicio}' não existe.`);
   }
 
   for (const [nodeId, node] of Object.entries(content.nodes)) {
@@ -178,13 +227,81 @@ function navegarPara(nodeId) {
 }
 
 function linkifyRamos(html) {
-  // Detecta padrão "ramo P1.1.3" ou "ramo P1.2" e substitui por link clicável
-  return html.replace(/ramo\s+(P[\d.]+)/g, function(match, nodeId) {
-    if (nodes[nodeId]) {
-      return `ramo <a href="javascript:void(0)" onclick="navegarPara('${nodeId}')" style="font-weight:700;text-decoration:underline;cursor:pointer;">${nodeId}</a>`;
+  if (!html) return "";
+
+  // Detecta "desafio P1.1.3" e também mantém compatibilidade com "ramo P1.1.3".
+  // O termo "desafio" só vira link quando aparece imediatamente antes de um código Px.x.x.
+  return html.replace(/\b(ramo|desafio|grupo)\s+(P\d+(?:\.\d+)*)\b/gi, function(match, label, nodeId) {
+    const canonicalNodeId = nodeId.toUpperCase();
+
+    if (nodes[canonicalNodeId]) {
+      const displayLabel = label.toLowerCase() === "ramo" ? "desafio" : label;
+
+      return `${displayLabel} <a href="javascript:void(0)" onclick="navegarPara('${canonicalNodeId}')" style="font-weight:700;text-decoration:underline;cursor:pointer;">${canonicalNodeId}</a>`;
     }
+
     return match;
   });
+}
+
+function addPromptCopyButtons(html) {
+  const markerRegex = /<p>Copie a seguinte pergunta e cole no prompt do <a href="https:\/\/chatgpt\.com\/g\/g-cdRp2udsg-flexm4i">GPT de IA da flexM4i<\/a>:?<\/p>/g;
+
+  return html.replace(
+    new RegExp(markerRegex.source + "([\\s\\S]*?)(<hr>|$)", "g"),
+    function(match, promptHtml, end) {
+      const marker = match.replace(promptHtml + end, "");
+
+      return `
+        ${marker}
+        <div class="prompt-copy-box">
+         <div class="prompt-text">
+          ${promptHtml}
+        </div>
+
+        <p class="prompt-instrucao">Copie o prompt e leve para o GPT da flexM4i</p>
+
+        <div class="prompt-actions">
+          <button class="btn-copy-prompt" onclick="copyPrompt(this)">
+            Copiar o prompt
+          </button>
+
+          <button class="btn-copy-prompt" onclick="openFlexGPT()">
+            Abrir GPT da flexM4i
+          </button>
+        </div>
+</div>
+         
+        ${end}
+      `;
+    }
+  );
+}
+
+function copyPrompt(button) {
+  const box = button.closest(".prompt-copy-box");
+  const promptEl = box.querySelector(".prompt-text");
+
+  let text = promptEl.innerText.trim();
+
+  // Remove aspas curvas ou retas apenas no início e no fim do prompt
+  text = text.replace(/^[“"]/, "").replace(/[”"]$/, "");
+
+  navigator.clipboard.writeText(text)
+    .then(() => {
+      const originalText = button.textContent;
+      button.textContent = "Prompt copiado";
+      setTimeout(() => {
+        button.textContent = originalText;
+      }, 2000);
+    })
+    .catch(() => {
+      alert("Não foi possível copiar automaticamente. Selecione o texto e copie manualmente.");
+    });
+}
+
+function openFlexGPT() {
+  window.open("https://chatgpt.com/g/g-cdRp2udsg-flexm4i", "_blank");
 }
 
 function renderNode(nodeId) {
@@ -216,7 +333,7 @@ function renderQuestion(qid) {
     history.push(qid);
   }
 
-  document.getElementById("questionText").textContent = node.pergunta || "";
+ document.getElementById("questionText").textContent = formatCurrentTitle(node.pergunta || "");
 
   const exemploEl = document.getElementById("questionExemplo");
   exemploEl.textContent = node.exemplo || "";
@@ -285,10 +402,10 @@ function showResult(node, nodeId) {
   const resultHipoteses = document.getElementById("resultHipoteses");
   const resultRecomendacoes = document.getElementById("resultRecomendacoes");
 
-  if (resultTitle) {
-    resultTitle.textContent = node.pergunta || "";
-    resultTitle.classList.toggle("hidden", !node.pergunta);
-  }
+if (resultTitle) {
+  resultTitle.textContent = formatCurrentTitle(node.pergunta || "");
+  resultTitle.classList.toggle("hidden", !node.pergunta);
+}
 
   if (resultExample) {
     resultExample.textContent = node.exemplo || "";
@@ -296,7 +413,7 @@ function showResult(node, nodeId) {
   }
 
   const hipoteses = node.hipoteses || "Este ramo ainda está em desenvolvimento.";
-  resultHipoteses.innerHTML = hipoteses;
+  resultHipoteses.innerHTML = linkifyRamos(hipoteses);
 
   const acoesBox = document.getElementById("resultRecomendacoesBox");
   const btnContinuar = document.getElementById("btnContinuar");
@@ -315,7 +432,7 @@ function showResult(node, nodeId) {
   } else {
     recomendacoesHtml = node.acoes || "Em breve.";
   }
-  resultRecomendacoes.innerHTML = linkifyRamos(recomendacoesHtml);
+ resultRecomendacoes.innerHTML = linkifyRamos(addPromptCopyButtons(recomendacoesHtml));
   acoesBox.classList.remove("hidden");
 
   btnContinuar.classList.toggle("hidden", !redirectTarget);
@@ -340,24 +457,23 @@ function continuar() {
 }
 
 function goBack() {
-  if (history.length === 0) {
+  if (history.length <= 1) {
     show("screen-welcome");
     return;
   }
 
-  // Subir o histórico até encontrar um nó com perguntas (tela de questão)
-  while (history.length > 0) {
-    const prevQid = history[history.length - 1];
-    history.pop();
-    const prevNode = nodes[prevQid];
-    if (prevNode && Array.isArray(prevNode.respostas) && prevNode.respostas.length > 0) {
-      renderNode(prevQid);
-      return;
-    }
+  // Remove o nó atual
+  history.pop();
+
+  // Volta para o nó imediatamente anterior, seja pergunta ou resultado
+  const prevId = history[history.length - 1];
+
+  if (!prevId || !nodes[prevId]) {
+    show("screen-welcome");
+    return;
   }
 
-  // Se não encontrou nenhum nó com perguntas, volta para o início
-  show("screen-welcome");
+  renderNode(prevId);
 }
 
 function goBackFromQuestion() {

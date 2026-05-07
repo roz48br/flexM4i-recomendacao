@@ -91,6 +91,17 @@ main {
   font-size: 1.1rem;
 }
 
+.welcome-disclaimer {
+  font-size: 1.1rem;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+#screen-welcome .btn-primary {
+  margin-top: 36px;
+}
+
 .question-text {
   color: #6B2D8B;
   font-size: 1.25rem;
@@ -368,4 +379,126 @@ footer {
   font-style: italic;
   color: #999;
   font-size: 0.82rem;
+}
+
+.sugestao-titulo {
+  color: #6a0dad;
+  font-weight: 700;
+}
+
+.sugestao-pergunta {
+  color: #6a0dad;
+  font-style: italic;
+}
+
+.prompt-copy-box {
+  margin-top: 12px;
+}
+
+.prompt-text {
+  background-color: #f5f3ff;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.btn-copy-prompt {
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  background-color: #524fbf;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-copy-prompt:hover {
+  background-color: #403ca8;
+}
+
+.btn-open-gpt {
+  margin-top: 10px;
+  margin-left: 8px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  background-color: #524fbf;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-open-gpt:hover {
+  background-color: #403ca8;
+}
+
+.prompt-text {
+  margin-bottom: 14px;
+}
+
+.prompt-instrucao {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  color: #524fbf;
+  font-weight: 600;
+}
+
+.prompt-actions {
+  margin-top: 2px;
+}
+
+.recommendation-note {
+  position: relative;
+  margin: 0 0 16px 0;
+  padding: 14px 18px 14px 42px;
+  background: #f1f3f2; /* cinza claro já usado */
+  color: #3f4f46; /* verde-acinzentado mais elegante */
+  font-size: 0.96rem;
+  line-height: 1.5;
+  border-radius: 6px;
+}
+
+.recommendation-note::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  bottom: 12px;
+  width: 4px;
+  background: #6f2dbd;
+  border-radius: 6px;
+}
+
+.recommendation-note em {
+  color: inherit;
+  font-style: italic;
+}
+
+.hypothesis-note {
+  position: relative;
+  margin: 0 0 16px 0;
+  padding: 12px 16px 12px 40px;
+  background: rgba(255, 255, 255, 0.85); /* menos branco puro */
+  color: #4b1f7a;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  border-radius: 4px; /* menos arredondado */
+}
+
+.hypothesis-note::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  bottom: 12px;
+  width: 4px; /* mais fino, como na recomendação */
+  background: #6f2dbd;
+  border-radius: 4px;
+}
+
+.hypothesis-note em {
+  color: inherit;
+  font-style: italic;
 }
